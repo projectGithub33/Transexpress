@@ -28,6 +28,7 @@
         <activity android:name=".ClientValideeArriveeCommandeActivity" />
         <activity android:name=".ClientArchiveTransfertActivity" />
         <activity android:name=".ClientEffectuerServiceActivity" />
+        <activity android:name=".InfoActivity" />
         <activity
             android:name=".ClientAcceuilActivity"
             android:label="@string/title_activity_client_acceuil"
