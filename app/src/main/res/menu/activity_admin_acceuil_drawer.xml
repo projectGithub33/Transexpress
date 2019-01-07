@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/admin_suivi_service"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Suivi service" />
+        <item
+            android:id="@+id/admin_position_client"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Position client" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/admin_deconnexion"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Deconnexion" />
+        </menu>
+    </item>
+
+</menu>

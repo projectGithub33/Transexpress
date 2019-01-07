@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SignActivity"
+tools:layout_editor_absoluteY="81dp">
+
+<TextView
+    android:id="@+id/textView8"
+    android:layout_width="177dp"
+    android:layout_height="0dp"
+    android:layout_marginBottom="26dp"
+    android:layout_marginTop="16dp"
+    android:text="Sign In"
+    android:textAllCaps="false"
+    android:textSize="28sp"
+    android:textStyle="bold|italic"
+    app:layout_constraintBottom_toTopOf="@+id/id_nom"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/id_nom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="23dp"
+    android:ems="10"
+    android:hint="Nom"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toTopOf="@+id/id_prenom"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+<EditText
+    android:id="@+id/id_prenom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="23dp"
+
+    android:ems="10"
+    android:hint="Prenom"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toTopOf="@+id/id_login"
+    app:layout_constraintStart_toStartOf="@+id/id_nom"
+    app:layout_constraintTop_toBottomOf="@+id/id_nom" />
+
+<EditText
+    android:id="@+id/id_login"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="21dp"
+    android:ems="10"
+    android:hint="login"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toTopOf="@+id/id_pass"
+    app:layout_constraintStart_toStartOf="@+id/id_prenom"
+    app:layout_constraintTop_toBottomOf="@+id/id_prenom" />
+
+<EditText
+    android:id="@+id/id_pass"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp"
+    android:ems="10"
+    android:hint="password"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toTopOf="@+id/id_conf"
+    app:layout_constraintStart_toStartOf="@+id/id_login"
+    app:layout_constraintTop_toBottomOf="@+id/id_login" />
+
+<EditText
+    android:id="@+id/id_conf"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="23dp"
+    android:ems="10"
+    android:hint="Confirm password"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toTopOf="@+id/id_butt"
+    app:layout_constraintStart_toStartOf="@+id/id_pass"
+    app:layout_constraintTop_toBottomOf="@+id/id_pass" />
+
+<Button
+    android:id="@+id/id_butt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="38dp"
+    android:layout_marginLeft="44dp"
+    android:layout_marginStart="44dp"
+    android:text="Submit"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/id_conf"
+    app:layout_constraintTop_toBottomOf="@+id/id_conf" />
+
+</android.support.constraint.ConstraintLayout>
